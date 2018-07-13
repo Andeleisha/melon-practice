@@ -148,12 +148,12 @@ def get_sellability_report(melons):
         harvested_by = melon.harvested_by
         field = melon.field
         can_be_sold = melon.is_sellable()
-        print("{} harvested by {} from Field # {}".format(melon_name, harvested_by, field))
+        # print("{} harvested by {} from Field # {}".format(melon_name, harvested_by, field))
         #print(f "{melon_name} harvested by {harvested_by} from Field # {field}")
         if can_be_sold :
-            print("CAN BE SOLD")
+            print("{} harvested by {} from Field # {} CAN BE SOLD".format(melon_name, harvested_by, field))
         else:
-            print("NOT SELLABLE")
+            print("{} harvested by {} from Field # {} IS NOT SELLABLE".format(melon_name, harvested_by, field))
 
 
 
